@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Door Security System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Сигналізація</h1>
+      <p class="subtitle">Стан дверей та журнал подій</p>
+    </header>
+
+    <section class="cards">
+      <div class="card" id="statusCard">
+        <div class="card-title">Стан дверей</div>
+        <div class="card-value" id="statusText">Завантаження...</div>
+      </div>
+
+      <div class="card neutral">
+        <div class="card-title">Пристрій</div>
+        <div class="card-value" id="deviceName">—</div>
+      </div>
+
+      <div class="card neutral">
+        <div class="card-title">Останнє оновлення</div>
+        <div class="card-value small" id="lastUpdated">—</div>
+      </div>
+    </section>
+
+    <section class="logs-section">
+      <h2>Журнал подій</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Пристрій</th>
+            <th>Статус</th>
+            <th>Час події</th>
+          </tr>
+        </thead>
+        <tbody id="logsTableBody">
+          <tr>
+            <td colspan="4">Завантаження...</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
